@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+/* 상단 스플릿 네비게이션 시작 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+
+.navbar__logo i {
+    color: white;
+    padding: 0px 8px 0px 15px;
+}
+
+.navbar__logo>a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar__menu>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar__menu li {
+    padding: 8px 30px;
+}
+
+.navbar__menu li:hover {
+    background-color: orange;
+    border-radius: 3px;
+}
+
+
+
+
+    /* 네비 검색버튼 시작 */
+    .navbar > .search-container {
+        float: right;
+      }
+      
+      .navbar input[type=text] {
+        padding: 6px;
+        margin-top: 5px;
+        font-size: 17px;
+        border: none;
+        
+      }
+      
+      .navbar .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 5px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .navbar .search-container button:hover {
+        background: #ccc;
+      }
+
+      /* 네비 검색버튼 끝 */
+
+
+
+
+
+.navbar__icons {
+    list-style: none;
+    display: flex;
+    color: white;
+    margin: 0;
+    padding-left: 0;
+}
+
+.navbar__icons li {
+    padding: 8px 12px;
+    margin: 0;
+}
+
+.navbar__toggleBtn {
+    color: white;
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    display: none;
+    padding: 0px 8px 0px 8px;
+}
+
+.navbar__menu.active,
+.navbar__icons.active {
+    display: flex;
+}
+
+/* 상단 스플릿 네비게이션 끝 */
+
+
+/* 배너 항목 시작 */
+
+#banner {
+    width: 100%;
+    height: 380px;
+    /* background-color: gray; */
+}
+  
+  .bg-img {
+    /* The image used */
+    background-image: url("/images/KakaoTalk_20220513_213045116.jpg");
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Add styles to the form container */
+  .container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: rgba(182, 178, 178, 0.575);
+    color: rgba(255, 255, 255, 0.87);
+  }
+  
+  /* Full-width input fields */
+  input[type=text2], input[type=password2] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    box-sizing: border-box;
+  }
+  
+  input[type=text2]:focus, input[type=password2]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+
+  .btn_sign {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    margin-top: 5px;
+  }
+  
+  .btn_sign:hover {
+    opacity: 1;
+  }
+
+  .btn_sign > a {
+    text-decoration: none;
+    color: white;
+  }
+
+
+
+/* 배너 항목 끝 */
+
+/* 배너 1_2 항목 시작 */
+#myVideo {
+  width: 100%; 
+  height: 100%;
+}
+
+.content {
+  position: sticky;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  bottom: 0;
+  width: 100%;
+  margin-top: -100px;
+  z-index: 1;
+  text-align: center;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+/* 배너 1_2 항목 끝 */
+
+/* 배너2 항목 시작 */
+#banner2 {
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+}
+
+.bgimg {
+    background-image: url('/images/road-g324e51b95_1280.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+  
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+
+  #demo {
+      margin-top: 10px;
+      
+  }
+
+/* 배너2 항목 끝 */
+
+/* 푸터 영역 */
+
+#footer {
+    width: 100%;
+    height: 150px;
+    border-top: 2px solid #222;
+    /* 위쪽에 가로선 추가 */
+}
+
+
+
+#bottomMenu {
+    width: 100%;
+    height: 20px;
+}
+
+#bottomMenu ul {
+    margin-top: 15px;
+}
+
+#bottomMenu ul li {
+    float: left;
+    /* 가로로 배치 */
+    padding: 5px 20px;
+    border-right: 1px solid #ddd;
+    list-style: none;
+    
+    /* 항목 오른쪽에 세로선 */
+}
+
+
+#bottomMenu ul li:last-child {
+    border-right: none;
+    /* 마지막 항목에는 오른쪽 세로선 없음 */
+}
+
+#bottomMenu ul li a,
+#bottomMenu ul li a:visited {
+    font-size: 15px;
+    /* 폰트 크기 */
+    color: #666;
+    /* 폰트 색상 */
+    text-decoration: none;
+}
+
+#bottomMenu {
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+
+#sns {
+    position: absolute;
+    right: 0;
+    margin-top: -20px;
+    /* 오른쪽 끝에 배치 */
+}
+
+#sns ul li {
+    border: none;
+    /* 세로선 없이 */
+    padding: 5px;
+}
+
+#company {
+    clear: left;
+    /* 플로팅 해제. clear: both도 가능 */
+    margin-top: 25px;
+    /* 위쪽 마진 */
+    margin-left: 20px;
+    /* 왼쪽 마진 */
+}
+
+#footer > #company > p {
+    font-size: 14px;
+    /* 폰트 크기 */
+    color: #aaa;
+    /* 폰트 색상 */
+    line-height: 25px;
+    /* 글자 높이 간격*/
+}
+
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1240px) {
+
+    #wrap {
+        width: 100%;
+    }
+
+
+}
+
+/* 화면 너비 0 ~ 953px */
+@media (max-width: 953px) {
+    .navbar input[type=text] {
+        padding: 3px;
+        margin-top: 5px;
+        font-size: 7px;
+        border: none;
+      }
+      
+      .navbar .search-container button {
+        float: right;
+        padding: 3px 5px;
+        margin-top: 5px;
+        margin-right: 16px;
+        background: #ddd;
+        font-size: 7px;
+        border: none;
+        cursor: pointer;
+      }
+
+}
+
+/* 화면 너비 0 ~ 844px */
+@media (max-width: 844px) {
+    .navbar__menu>li>a {
+        margin-left: -30px;
+    }
+
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px) {
+
+    header {
+        position: fixed;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__logo {
+        margin-top: 20px;
+        line-height: 40px;
+    }
+
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        background-color: gray;
+        line-height: 40px;
+        
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__menu>li>a {
+        margin-left: 0px;
+    }
+    
+    .navbar input[type=text] {
+        display: none;
+      }
+      
+      .navbar .search-container button {
+        display: none;
+      }
+
+    .navbar__icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        background-color: gray;
+        line-height: 40px;
+    }
+
+    .navbar__toggleBtn {
+        display: block;
+        margin-top: 20px;
+        line-height: 40px;
+    }
+
+    .navbar__menu.active,
+    .navbar__icons.active {
+        display: flex;
+    }
+
+    #banner2 {
+        height: 300px;
+        background-color: gray;
+    }
+
+
+    .topleft {
+        font-size: small;
+      }
+      
+      .bottomleft {
+        font-size: small;
+      }
+      
+      .middle {
+        font-size: small;
+      }
+
+
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px) {
+
+    header {
+        position: fixed;
+    }
+
+    #sns {
+        display: none;
+         /* 오른쪽 끝에 배치 */
+     }
+
+
+     .content > h1 {
+      font-size: small;
+    }
+    
+    .content > p {
+      font-size: small;
+    }
+
+    #myBtn {
+      width: 100px;
+      font-size: 9px;
+      
+    }
+    
+}

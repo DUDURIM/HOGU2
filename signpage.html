@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/79ec480f66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/signpage.css">
+    <title>회원가입</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <nav class="navbar">
+
+                <div class="navbar__logo">
+                    <i class="fa-solid fa-car"></i>
+                    <a href="/index.html">호구들의 차량일지</a>
+                </div>
+
+                <ul class="navbar__menu">
+                    <li><a href="/index.html">홈</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">차량기록</a></li>
+                    <li><a href="#">구매목록</a></li>
+                </ul>
+
+                <div class="search-container">
+                    <form action="https://www.naver.com/">
+                        <input class="search_bar" type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+                <ul class="navbar__icons">
+                    <li><a href="/signpage.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                    <li><i class="fa-solid fa-user"></i></li>
+
+                </ul>
+                <a href="#" class="navbar__toggleBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+<section id="signpage">
+        
+    <div id="signbox">
+        <h1>회원가입</h1>
+        <p>회원이 되셔서 할인쿠폰/마일리지 등 다양한 서비스를 받으세요.</p>
+    <button class="signbt1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">일반회원</button>
+    <button class="signbt2" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">기업회원</button>
+</div>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                    <h1>회원가입</h1>
+                    <p>양식에 맞게 내용을 입력해주세요.</p>
+                    <hr>
+                    <label for="email2"><b>Email</b></label>
+                    <input type="text3" placeholder="Enter Email" name="email2" required>
+
+                    <label for="psw2"><b>Password</b></label>
+                    <input type="password3" placeholder="Enter Password" name="psw2" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password3" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                    </p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">취소</button>
+                        <button type="submit" class="signupbtn">가입</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="id02" class="modal">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container">
+                    <h1>회원가입</h1>
+                    <p>양식에 맞게 내용을 입력해주세요.</p>
+                    <hr>
+                    <label for="email2"><b>Email</b></label>
+                    <input type="text3" placeholder="Enter Email" name="email2" required>
+
+                    <label for="psw2"><b>Password</b></label>
+                    <input type="password3" placeholder="Enter Password" name="psw2" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password3" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                    </p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                            class="cancelbtn">취소</button>
+                        <button type="submit" class="signupbtn">가입</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+        <footer id="footer">
+            <div id="bottomMenu">
+                <ul>
+                    <li><a href="#" target="_blank">회사 소개</a></li>
+                    <li><a href="#" target="_blank">개인정보처리방침</a></li>
+                    <li><a href="#" target="_blank">가이드</a></li>
+                    <li><a href="#" target="_blank">제휴안내</a></li>
+                </ul>
+
+                <div id="sns">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="images/sns-1.png"></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><img src="images/sns-2.png"></a></li>
+                        <li><a href="#" target="_blank"><img src="images/sns-3.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="company">
+                <p>회사명: 00상사 &nbsp&nbsp 대표자: GU &nbsp&nbsp 주소: 경기도 고양시 일산서구 중앙로 0000 (일송) 3층 123호 &nbsp&nbsp (대표전화)
+                    010-0000-0000</p>
+                <p>사업자등록번호: 000-00-00000 &nbsp&nbsp 통신판매업신고번호: 2021-고양일산서-0000 &nbsp&nbsp 개인정보보호책임자: GU
+                    (00000@naver.com)</p>
+                <p>COPURIGHT (c) 00상사 ALL RIGHTS RESERVED.</p>
+            </div>
+
+
+        </footer>
+    </div>
+
+<script src="/signpage.js"></script>
+
+</body>
+
+</html>

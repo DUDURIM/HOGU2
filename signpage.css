@@ -1,0 +1,573 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+
+/* 상단 스플릿 네비게이션 시작 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+
+.navbar__logo i {
+  color: white;
+  padding: 0px 8px 0px 15px;
+}
+
+.navbar__logo>a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar__menu>li>a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar__menu li {
+  padding: 8px 30px;
+}
+
+.navbar__menu li:hover {
+  background-color: orange;
+  border-radius: 3px;
+}
+
+
+
+
+  /* 네비 검색버튼 시작 */
+  .navbar > .search-container {
+      float: right;
+    }
+    
+    .navbar input[type=text] {
+      padding: 6px;
+      margin-top: 5px;
+      font-size: 17px;
+      border: none;
+      
+    }
+    
+    .navbar .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 5px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .navbar .search-container button:hover {
+      background: #ccc;
+    }
+
+    /* 네비 검색버튼 끝 */
+
+
+
+
+
+.navbar__icons {
+  list-style: none;
+  display: flex;
+  color: white;
+  margin: 0;
+  padding-left: 0;
+  
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+  margin: 0;
+}
+
+.navbar__toggleBtn {
+  color: white;
+  position: absolute;
+  right: 15px;
+  font-size: 20px;
+  display: none;
+  padding: 0px 8px 0px 8px;
+}
+
+.navbar__menu.active,
+.navbar__icons.active {
+  display: flex;
+}
+
+.navbar > .navbar__icons > li > a:link {
+  color : white;
+}
+.navbar > .navbar__icons > li > a:visited {
+  color : white;
+}
+.navbar > .navbar__icons > li > a:hover {
+  color : white;
+}
+.navbar >.navbar__icons > li > a:active {
+  color : white;
+}
+
+
+
+/* 상단 스플릿 네비게이션 끝 */
+
+/* 회원가입 시작 */
+
+#signpage {
+  height: 500px;
+}
+
+#signbox {
+  width: 100%;
+  height: 500px;
+  border: 1px solid black;
+  background-color: rgba(102, 102, 102, 0.123);
+}
+
+#signbox > h1 {
+text-align: center;
+margin-top: 150px;
+}
+
+#signbox > p {
+  text-align: center;
+  margin-top: 30px;
+  }
+
+#signbox > .signbt1 {
+  margin-top: 50px;
+  margin-left: 42%;
+  margin-right: 10px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text3], input[type=password3] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text3]:focus, input[type=password3]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.signbt1, .signbt2  {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Extra styles for the signup button */
+.signupbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/* 회원가입 끝 */
+
+
+/* 푸터 영역 */
+
+#footer {
+  width: 100%;
+  height: 150px;
+  border-top: 2px solid #222;
+  /* 위쪽에 가로선 추가 */
+}
+
+
+
+#bottomMenu {
+  width: 100%;
+  height: 20px;
+}
+
+#bottomMenu ul {
+  margin-top: 15px;
+}
+
+#bottomMenu ul li {
+  float: left;
+  /* 가로로 배치 */
+  padding: 5px 20px;
+  border-right: 1px solid #ddd;
+  list-style: none;
+  
+  /* 항목 오른쪽에 세로선 */
+}
+
+
+#bottomMenu ul li:last-child {
+  border-right: none;
+  /* 마지막 항목에는 오른쪽 세로선 없음 */
+}
+
+#bottomMenu ul li a,
+#bottomMenu ul li a:visited {
+  font-size: 15px;
+  /* 폰트 크기 */
+  color: #666;
+  /* 폰트 색상 */
+  text-decoration: none;
+}
+
+#bottomMenu {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+#sns {
+  position: absolute;
+  right: 0;
+  margin-top: -20px;
+  /* 오른쪽 끝에 배치 */
+}
+
+#sns ul li {
+  border: none;
+  /* 세로선 없이 */
+  padding: 5px;
+}
+
+#company {
+  clear: left;
+  /* 플로팅 해제. clear: both도 가능 */
+  margin-top: 25px;
+  /* 위쪽 마진 */
+  margin-left: 20px;
+  /* 왼쪽 마진 */
+}
+
+#footer > #company > p {
+  font-size: 14px;
+  /* 폰트 크기 */
+  color: #aaa;
+  /* 폰트 색상 */
+  line-height: 25px;
+  /* 글자 높이 간격*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 화면 너비 0 ~ 1200px */
+@media (max-width: 1240px) {
+
+  #wrap {
+      width: 100%;
+  }
+
+
+}
+
+/* 화면 너비 0 ~ 953px */
+@media (max-width: 953px) {
+  .navbar input[type=text] {
+      padding: 3px;
+      margin-top: 5px;
+      font-size: 7px;
+      border: none;
+    }
+    
+    .navbar .search-container button {
+      float: right;
+      padding: 3px 5px;
+      margin-top: 5px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 7px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #signbox > .signbt1 {
+      margin-left: 40%;
+    }
+
+   
+}
+
+/* 화면 너비 0 ~ 844px */
+@media (max-width: 844px) {
+  .navbar__menu>li>a {
+      margin-left: -30px;
+  }
+
+}
+
+/* 화면 너비 0 ~ 768px */
+@media (max-width: 768px) {
+
+  header {
+      position: fixed;
+  }
+
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar__logo {
+      margin-top: 20px;
+      line-height: 40px;
+  }
+
+  .navbar__menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+      background-color: gray;
+      line-height: 40px;
+      
+  }
+
+  .navbar__menu li {
+      width: 100%;
+      text-align: center;
+  }
+
+  .navbar__menu>li>a {
+      margin-left: 0px;
+  }
+  
+  .navbar input[type=text] {
+      display: none;
+    }
+    
+    .navbar .search-container button {
+      display: none;
+    }
+
+  .navbar__icons {
+      display: none;
+      justify-content: center;
+      width: 100%;
+      background-color: gray;
+      line-height: 40px;
+  }
+
+  .navbar__toggleBtn {
+      display: block;
+      margin-top: 20px;
+      line-height: 40px;
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active {
+      display: flex;
+  }
+
+  #signbox > .signbt1 {
+    margin-left: 35%;
+    margin-right: 10px;
+  }
+  
+
+}
+
+/* 화면 너비 0 ~ 480px */
+@media (max-width: 480px) {
+
+  header {
+      position: fixed;
+  }
+
+  #sns {
+      display: none;
+       /* 오른쪽 끝에 배치 */
+   }
+
+   #signbox > .signbt1 {
+    margin-left: 25%;
+    margin-right: 10px;
+  }
+
+  
+}
+
+/* 화면 너비 0 ~ 280px */
+@media (max-width: 280px) {
+
+    #signbox > .signbt1 {
+      margin-left: 20%;
+      padding: 10px;
+    }
+
+    #signbox > .signbt2 {
+      padding: 10px;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
