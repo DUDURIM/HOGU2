@@ -134,7 +134,7 @@
   
   .bg-img {
     /* The image used */
-    background-image: url("/images/KakaoTalk_20220513_213045116.jpg");
+    background-image: url("images/KakaoTalk_20220513_213045116.jpg");
     min-height: 380px;
   
     /* Center and scale the image nicely */
@@ -250,7 +250,7 @@
 }
 
 .bgimg {
-    background-image: url('/images/road-g324e51b95_1280.jpg');
+    background-image: url('images/road-g324e51b95_1280.jpg');
     height: 100%;
     background-position: center;
     background-size: cover;
